@@ -1,8 +1,6 @@
 # yaml-language-server: $schema=./build.yaml
 name: Build and Deploy
 on:
-  workflow_dispatch:
-
   push:
     branches: [ main ]
     # Publish semver tags as releases.

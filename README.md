@@ -25,13 +25,13 @@ IMPORTANT: In general, each microservice should have an independent release and 
 ### Deploy via GitHub Actions (recommended)
 
 1. Fork the sample repo
-2. Create the following required [encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-an-environment) for the sample
+2. Create the following required [encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) for the sample
 
   | Name | Value |
   | ---- | ----- |
   | AZURE_CREDENTIALS | The JSON credentials for an Azure subscription. [Learn more](https://docs.microsoft.com/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-a-service-principal-and-add-it-as-a-github-secret) |
   | RESOURCE_GROUP | The name of the resource group to create |
-  | PACKAGES_TOKEN | A GitHub personal access token with the `packages:read` scope. [Learn more](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) |
+  | PACKAGES_TOKEN | A GitHub personal access token with the `read:packages` scope. [Learn more](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) |
 
 3. Open the GitHub Actions, select the **Build and Deploy** action and choose to run the workflow.  
   
